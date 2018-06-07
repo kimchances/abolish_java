@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">    
+     <bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource"   >
+        <property name="driverClass" value="com.mysql.jdbc.Driver"></property>
+        <property name="jdbcUrl"     value="jdbc:mysql://120.78.78.155:3306/myServer?useUnicode=true&amp;characterEncoding=utf8&amp;zeroDateTimeBehavior=convertToNull"></property>
+        <property name="user"        value="root"></property>
+        <property name="password"    value="1994root"></property>
+        <property name="initialPoolSize"            value="2" />
+		<property name="minPoolSize"                value="1" />
+		<property name="maxPoolSize"                value="20" />
+		<property name="maxIdleTime"                value="30" />
+		<property name="idleConnectionTestPeriod"   value="30" />
+		<property name="preferredTestQuery"         value="select 1" />
+		<property name="acquireIncrement"           value="2" />
+		<property name="acquireRetryAttempts"       value="30" />
+		<property name="acquireRetryDelay"          value="1000" />
+		<property name="breakAfterAcquireFailure"   value="false" />
+		<property name="checkoutTimeout"            value="10000" />
+		<property name="autoCommitOnClose"          value="false" />
+		<property name="maxStatements"              value="0" />
+		<property name="maxStatementsPerConnection" value="0" />
+		<property name="testConnectionOnCheckin"    value="true" />
+		<property name="testConnectionOnCheckout"   value="false" />
+		<property name="usesTraditionalReflectiveProxies" value="false" />
+		<property name="numHelperThreads"                 value="5" />
+        <property name="unreturnedConnectionTimeout"      value="60" />
+     </bean>
+  </beans>
+    
+
+
+

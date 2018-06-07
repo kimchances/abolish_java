@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">    
+  
+
+	<bean id="systemConfig" class="java.util.Properties">
+		<constructor-arg>
+			<props>
+			
+			
+			
+			
+				<prop key="uploadServerURL"     >http://ggucar.com:9090/main/files/</prop>
+				<prop key="uploadFormat"        >jpg|jpeg|png|gif|swf|mav|mp4</prop>
+				<prop key="uploadSavePath"      >/data/oss-uat/</prop>
+				<prop key="uploadDBWrite"       >true</prop>
+				<prop key="uploadDBRead"        >true</prop>
+				<prop key="uploadDBReadClean"   >false</prop>
+				
+				
+				
+			</props>
+		</constructor-arg>
+	</bean>
+
+	
+</beans>
+    
+
+
+
